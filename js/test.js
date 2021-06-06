@@ -23,18 +23,19 @@
 // ---------------------------------------------------------
 
 
-// // Написать программу которая получит от пользователя число и определит четное это число или не четное.
-
-// 1) Создать вари с промпт
-const userNumber = Number(prompt('Enter the number'))
-let message;
-
-// 2) Сделать иф из условием
-if (userNumber % 2 === 0) {
-    message = `Even: ${userNumber}`;
-} else {
-    message = `Odd: ${userNumber}`;
+function checkForSpam(message) {
+    let result;
+    // Change code below this line
+    result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
+    // Change code above this line
+    return result;
 }
 
-// 3) Вывести консоли
-console.log(message);
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("Amazing SalE, only tonight!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+
+
