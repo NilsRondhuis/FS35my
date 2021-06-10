@@ -1,7 +1,15 @@
-const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// 2) Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива
+//будет выводить в консоль сообщение в формате < номер элемента > - <значение элемента >.
+//Нумерация элементов должна начинаться с 1.
+// Например для первого элемента массива['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено
+// 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-const players = ['Ramos', 'Messi'];
+const users = ["Mango", "Poly", "Ajax"]; 
+    
+for (let i = 0; i <= users.length - 1; i += 1) {
 
-const a = clients.concat(players);
+    console.log(`${i} - ${users[i]}`);
+}
 
-console.log(a);
+
+
