@@ -118,6 +118,74 @@
 
 
 // Задача 23
+// 1) Их нужно будет сравнить, а значит перебрать, перебираем
+// 2) Создать пустой массив 
+
+// const filterArray = (numbers, value) => {
+  // let newArray = [];
+
+  // for (let number of numbers) {
+  //   if (number > value) {
+  //     newArray.push(number);
+  //   }
+  // }
+
+  // return newArray;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// Задача 25
+// 1) Нужно перебрать один массив и запихнуть в условия проверку на иклюд и запушить
+// 2) Создать пустой массив
+
+// const getCommonElements = (array1, array2) => {
+//   let newArray = [];
+
+//   for (const arr1 of array1) {
+//     if (array2.includes(arr1)) {
+//       newArray.push(arr1);
+//     }
+//   }
+  
+//   return newArray;
+// }
+
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+
+// Задача 32 
+// 1) Один массив нужно перебрать 
+// 2) Сровнять в иф вывести в ретерн
+
+// const includes = (array, value) => {
+
+//   for (const arr of array) {
+//     if (arr === value) {
+//       return true;
+//     }
+//   }
+
+//   return false;
+// }
+
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+
+
 
 
 
