@@ -66,4 +66,33 @@
 
 
 
+/*
+Приватные даные
+*/ 
+
+const salaryManager = function (employeeName, baseSalary = 0) {
+    let salary = baseSalary;
+
+    return {
+        add(value) { //премия
+            if (value > 1000) {
+                return 'Внимание!'
+            }
+            salary += value;
+        },
+        pickUp(value) {  //штраф
+            salary -= value;
+        },
+        showCurrent() {
+            return `Текущая зарплата ${employeeName} - ${salary}.`;
+        }
+    };
+};
+
+
+const salaryCreate = salaryManager('Sergio', 6000);
+
+salaryCreate.add(1000)
+salaryCreate.pickUp(400);
+console.log(salaryCreate.showCurrent());
 
