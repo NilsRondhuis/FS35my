@@ -1,19 +1,99 @@
-// test
+// Написать скрипт рандомних цитат
 
-const Guest = function (name, room) {
-    this.name = name;
-    this.room = room;
+// const arrQuote = [
+//     'Цитата-1',
+//     'Цитата-2',
+//     'Цитата-3',
+//     'Цитата-4',
+//     'Цитата-5',
+//     'Цитата-6',
+//     'Цитата-7',
+//     'Цитата-8',
+//     'Цитата-9',
+//     'Цитата-10',
+//     'Цитата-11',
+//     'Цитата-12',
+//     'Цитата-13',
+//     'Цитата-14',
+//     'Цитата-15',
+//     'Цитата-16',
+//     'Цитата-17',
+//     'Цитата-18',
+//     'Цитата-19',
+//     'Цитата-20',
+// ];
+
+// const randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
+
+// console.log(randomNumber);
+
+// for (let i = 1; i <= arrQuote.length; i += 1) {
+    
+//     if (randomNumber === i) {
+//         console.log(arrQuote[i]);
+//     }
+// }
+
+//---------------------------------------------------------
+
+// const GeneratorQuote = function (quote = {}) {
+//     this.actualQuote = quote;
+// }
+
+// GeneratorQuote.prototype.showQuote = function (random) {
+//     for (let i = 0; i <= this.actualQuote.length; i += 1) {
+//         if (random() === i) {
+//             return console.log(this.actualQuote[i - 1]);
+//         }
+//     }
+// }
+
+// const quoteDay = new GeneratorQuote(arrQuote);
+// quoteDay.showQuote(() => Math.round(Math.random() * (20 - 1) + 1));
+
+
+
+// 1) Написать ф - ю конструктор которая создает обект person с такими ключами
+// const person = {
+//   firstName,
+//   lastName,
+//   age,
+//   gender,
+//   interest,
+//   bio() {
+//     // виводить строку Привет {имя} мне {возраст} лет. Мне нравится {интерес}
+//   },
+//   greeting() {
+//     // Привет, я {имя}
+//   },
+// };
+
+const GeneratePerson = function ({ firstName, lastName, age, gender, interest }) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.interest = interest;
+};
+
+
+const person = new GeneratePerson({
+    firstName: 'Sergio',
+    lastName: 'Ramos',
+    age: 34,
+    gender: 'man',
+    interest: 'Real Madrid',
+})
+
+GeneratePerson.prototype.bio = function () {
+    console.log(`Привет я ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interest}`);
 }
 
-
-Guest.prototype.showGuestInfo = function () {
-    console.log(`Hello ${this.name} your room ${this.room}`);
+GeneratePerson.prototype.greeting = function () {
+    console.log(`Привет, я ${this.firstName}`);
 }
 
+person.bio();
+person.greeting();
 
-const sergio = new Guest('Sergio', 5);
-const ansul = new Guest('Ansul', 4);
-
-
-sergio.showGuestInfo();
-ansul.showGuestInfo();
+console.log(person);
