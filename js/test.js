@@ -68,48 +68,65 @@
 //   },
 // };
 
-const GeneratePerson = function (obj) {
+// const GeneratePerson = function (obj) {
 
-    const { firstName, lastName, age, gender, interest } = obj;
+//     const { firstName, lastName, age, gender, interest } = obj;
 
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.gender = gender;
-    this.interest = interest;
-};
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.gender = gender;
+//     this.interest = interest;
+// };
 
-const Teacher = function (obj) {
-    const { subject } = obj;
+// const Teacher = function (obj) {
+//     const { subject } = obj;
 
-    GeneratePerson.call(this, obj);
-    this.subject = subject;
-};
+//     GeneratePerson.call(this, obj);
+//     this.subject = subject;
+// };
 
-const person = new GeneratePerson({
-    firstName: 'Sergio',
-    lastName: 'Ramos',
-    age: 34,
-    gender: 'man',
-    interest: 'Real Madrid',
+// const person = new GeneratePerson({
+//     firstName: 'Sergio',
+//     lastName: 'Ramos',
+//     age: 34,
+//     gender: 'man',
+//     interest: 'Real Madrid',
+// })
+
+// const teacher = new Teacher({
+//     firstName: 'Zinedin',
+//     lastName: 'Zidan',
+//     age: 54,
+//     gender: 'man',
+//     interest: 'Real Madrid',
+//     subject: 'coach',
+// });
+
+// GeneratePerson.prototype.bio = function () {
+//     console.log(`Привет я ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interest}`);
+// }
+
+// GeneratePerson.prototype.greeting = function () {
+//     console.log(`Привет, я ${this.firstName}`);
+// }
+
+// console.log(person);
+// console.log(teacher);
+
+
+
+
+const PlayersTeam = function () {
+
+    this.name = name;
+    this.team = team;
+    this.number = number;
+}
+
+
+const player1 = new PlayersTeam({ 
+    name: 'Ramos', 
+    team: 'Real Madrid', 
+    number: 4,
 })
-
-const teacher = new Teacher({
-    firstName: 'Zinedin',
-    lastName: 'Zidan',
-    age: 54,
-    gender: 'man',
-    interest: 'Real Madrid',
-    subject: 'coach',
-});
-
-GeneratePerson.prototype.bio = function () {
-    console.log(`Привет я ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interest}`);
-}
-
-GeneratePerson.prototype.greeting = function () {
-    console.log(`Привет, я ${this.firstName}`);
-}
-
-console.log(person);
-console.log(teacher);
