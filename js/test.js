@@ -68,7 +68,10 @@
 //   },
 // };
 
-const GeneratePerson = function ({ firstName, lastName, age, gender, interest }) {
+const GeneratePerson = function (obj) {
+
+    const { firstName, lastName, age, gender, interest } = obj;
+
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -76,6 +79,12 @@ const GeneratePerson = function ({ firstName, lastName, age, gender, interest })
     this.interest = interest;
 };
 
+const Teacher = function (obj) {
+    const { subject } = obj;
+
+    GeneratePerson.call(this, obj);
+    this.subject = subject;
+};
 
 const person = new GeneratePerson({
     firstName: 'Sergio',
@@ -85,6 +94,15 @@ const person = new GeneratePerson({
     interest: 'Real Madrid',
 })
 
+const teacher = new Teacher({
+    firstName: 'Zinedin',
+    lastName: 'Zidan',
+    age: 54,
+    gender: 'man',
+    interest: 'Real Madrid',
+    subject: 'coach',
+});
+
 GeneratePerson.prototype.bio = function () {
     console.log(`Привет я ${this.firstName} мне ${this.age} лет. Мне нравится ${this.interest}`);
 }
@@ -93,7 +111,5 @@ GeneratePerson.prototype.greeting = function () {
     console.log(`Привет, я ${this.firstName}`);
 }
 
-person.bio();
-person.greeting();
-
 console.log(person);
+console.log(teacher);
