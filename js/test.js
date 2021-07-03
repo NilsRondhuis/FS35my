@@ -115,18 +115,56 @@
 // console.log(teacher);
 
 
+// НАСЛЕДОВАНИЕ
 
-
-const PlayersTeam = function () {
+const PlayersTeam = function ({ name, team, number }) {
 
     this.name = name;
     this.team = team;
     this.number = number;
 }
 
+PlayersTeam.prototype.greeting = function () {
+    return console.log(`Hello my name is ${this.name}`);
+};
+
 
 const player1 = new PlayersTeam({ 
     name: 'Ramos', 
     team: 'Real Madrid', 
     number: 4,
-})
+});
+
+console.log(player1);
+
+player1.greeting()
+
+const player2 = new PlayersTeam({
+    name: 'Benzema',
+    team: 'Real Madrid',
+    number: 12,
+});
+
+console.log(player2);
+
+const CoachTeam = function (obj) {
+    // this = {}
+    const { position } = obj;
+    PlayersTeam.call(this, obj);
+    this.position = position;
+    // return this
+};
+
+CoachTeam.prototype = Object.create(PlayersTeam.prototype);
+CoachTeam.prototype.constructor = CoachTeam;
+
+
+const coach = new CoachTeam({ 
+    name: 'Zidan',
+    team: 'Real Madrid',
+    number: 1,
+    position: 'coahc', 
+});
+
+console.log(coach);
+coach.greeting()
