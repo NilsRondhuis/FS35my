@@ -10,24 +10,14 @@
  */
 
 // синтаксис класса
-class Car1 {
-    constructor () {
-        // console.log('Run constructor');
-        // console.log(this);
-
-        this.a = 5;
-        this.b = 2;
-    }
-};
-
-const myCar = new Car1();
-
-// console.log(myCar);
-
-// console.log('Prototype myCar -----', Object.getPrototypeOf(myCar));
-
-
 class PlayersTeam {
+
+    #test = 'test';  // приватное свойство
+
+    static playerInfo(info) {                // статические свойства
+        console.log('Show info ---', info);
+    };
+
     constructor (obj = {}) {
         const { name, team, number } = obj;
 
@@ -36,11 +26,10 @@ class PlayersTeam {
         this.number = number;
     }
 
-    changeTeam (team) {
+    changeTeam (team) {    // метод класса
         this.team = team;
     }
 }
-
 
 const sergioRamos = new PlayersTeam ({
     name: 'Sergio Ramos',
@@ -48,9 +37,10 @@ const sergioRamos = new PlayersTeam ({
     number: 4,
 });
 
-sergioRamos.changeTeam('Dinamo Kyiv');
+sergioRamos.changeTeam('Dinamo Kyiv'); // метод класса
 
 console.log(sergioRamos);
 
+PlayersTeam.playerInfo(sergioRamos); // статическое свойство
 
 
