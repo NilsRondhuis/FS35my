@@ -23,11 +23,27 @@ class PlayersTeam {
 
         this.name = name;
         this.team = team;
-        this.number = number;
+        this._number = number;
     }
 
     changeTeam (team) {    // метод класса
         this.team = team;
+    }
+
+    // getNumber () {
+    //     return this.name;
+    // }
+
+    get number () {             //геттер
+        return this._number;
+    }
+
+    // setNumber (newNum) {
+    //     this.name = newNum;
+    // }
+
+    set number (newNum) {
+        this._number = newNum;
     }
 }
 
@@ -38,9 +54,11 @@ const sergioRamos = new PlayersTeam ({
 });
 
 sergioRamos.changeTeam('Dinamo Kyiv'); // метод класса
+PlayersTeam.playerInfo(sergioRamos); // статическое свойство
+console.log(sergioRamos.number); // обращение к геттеру (читается свойство)
+sergioRamos.number = 8; // запись, выз сеттера
 
 console.log(sergioRamos);
 
-PlayersTeam.playerInfo(sergioRamos); // статическое свойство
 
 
