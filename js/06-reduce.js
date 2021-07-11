@@ -75,3 +75,29 @@ console.log(allTags);
 // acc = ['js', 'nodejs'] tweet.tags ['html', 'css']
 // return  [...['js', 'nodejs'], ...['html', 'css']]
 //  ['js', 'nodejs', 'html', 'css']
+
+
+/*
+ * Ведём статистику тегов
+ */
+
+const tagStats = allTags.reduce((acc, tag) => {
+    // if (!acc.hasOwnProperty(tag)) {
+    //     acc[tag] = 0
+    // }
+
+    // acc[tag] += 1;
+
+
+    // return acc;
+    return {
+        ...acc,
+        [tag]: acc[tag] ? acc[tag] + 1 : 1,
+    }
+}, {});
+
+console.log(tagStats);
+
+
+
+

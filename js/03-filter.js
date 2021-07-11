@@ -7,11 +7,11 @@
  *    - если коллбек вернул false элемент НЕ добавляется в возвращаемый массив
  */
 
-const numbers = [5, 10, 15, 20, 25];
+// const numbers = [5, 10, 15, 20, 25];
 
-const filteredNumber = numbers.filter(number => number > 15);
+// const filteredNumber = numbers.filter(number => number > 15);
 
-console.log(filteredNumber);
+// console.log(filteredNumber);
 
 
 const players = [
@@ -22,9 +22,10 @@ const players = [
     { id: 'player-5', name: 'Chelsy', timePlayed: 280, points: 48, online: true },
 ];
 
+
 /*
  * Получаем список хардкорных игроков с временем больше 250
  */
 
-const hardPlayer = players.filter(player => player.timePlayed > 250);
-console.log(hardPlayer);
+// const hardPlayer = players.filter(player => player.timePlayed > 250);
+// console.log(hardPlayer);

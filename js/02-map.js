@@ -5,7 +5,10 @@
  * - Возвращает новый массив такой же длины
  */
 
-// const numbers = [5, 10, 15, 20, 25];
+const numbers = [5, 10, 15, 20, 25];
+
+const filter = numbers.map(number => number > 15);
+console.log(filter);
 
 // const doubleNumbers = numbers.map(numbers => numbers * 2);
 
@@ -31,16 +34,16 @@ const players = [
 // });
 
 // вар2
-const updatePoint = players.map(player => {
-    return {
-        ...player,
-        points: Math.round(player.points * 1.1),   //подмена свойства
-        timePlayed: player.timePlayed * 2,
-    }
-})
+// const updatePoint = players.map(player => {
+//     return {
+//         ...player,
+//         points: Math.round(player.points * 1.1),   //подмена свойства
+//         timePlayed: player.timePlayed * 2,
+//     }
+// })
 
-console.table(players)
-console.log(updatePoint);
+// console.table(players)
+// console.log(updatePoint);
 
   /*
    * Получаем массив имён всех игроков
