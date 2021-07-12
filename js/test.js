@@ -96,7 +96,7 @@ const scientists = [
 //   Узнать все ли ученые работала в 19 ст
 
  
-// Задача 1 получить массив ученых которые родились в 19 ст и вывести на экран их имя и фамилию
+// Задача 1 получить массив ученых которые родились в 19 ст и вывести на экран их имя и фамилию --------
 
 // my ver
 // const callback = (scientist) => {
@@ -118,22 +118,45 @@ const scientists = [
 
 
 
-// Задача 2 Посчитать суму лет сколько прожили все ученные
+// Задача 2 Посчитать суму лет сколько прожили все ученные -----------------------------------------
 
 // const result = scientists.reduce((totalYear, scientist) => totalYear + (scientist.dead - scientist.born), 0);
 
 // console.log('Общее кол-во прожитых лет ученых --- ', result);
 
 
-// Задача 3 Отсортировать по алфавиту
+// Задача 3 Отсортировать по алфавиту -------------------------------------------------------
 
-// const result = scientists.map(scientist => scientist).sort();
+// const copy = [...scientists];
+// copy.sort((a, b) => a.name > b.name ? 1 : -1);
+// console.log(copy);
 
+//ver 2
+// const result = scientists.map(scientist => scientist.name).sort()
 // console.log(result);
 
-// Задача 4 Отсортировать по количеству прожитых лет
+// Задача 4 Отсортировать по количеству прожитых лет ------------------------------------------------
 
-// Задача 5 Удалить ученых которые родились в 15,16,17 ст
+// ver1
+// const copy = [...scientists];
+// copy.sort((a, b) => a.born - b.born);
+// console.log(copy);
+
+// ver2
+// const result = scientists.map(scientist => scientist.dead - scientist.born).sort();
+// console.log(result);
+
+// ver3
+// copy.sort((a, b) => (b.dead - b.born) - (a.dead - a.born));  // можно наоборот
+// console.log(copy);
+
+// Задача 5 Удалить ученых которые родились в 15,16,17 ст -----------------------------------------
+console.log(scientists);
+// const result = scientists.filter(scientist => scientist.born < 1400 || scientist.born > 1600); // пример фильтрации как удаление
+// console.log(result);
+
+const result = scientists.filter(scientist => scientist.id !== 7);  // пример удаления из массива
+console.log(result);
 
 // Задача 6 Найти год рождения Albert Einstein
 
