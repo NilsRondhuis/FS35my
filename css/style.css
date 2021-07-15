@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.update-color {
+    color: red;
+}
+
+.orange-link {
+    color: orange;
+}
