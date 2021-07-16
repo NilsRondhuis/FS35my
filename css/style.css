@@ -1,7 +1,7 @@
-a {
+/* a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 .update-color {
     color: red;
@@ -9,4 +9,30 @@ a {
 
 .orange-link {
     color: orange;
+}
+
+.js-color-peak {
+    padding: 0;
+    margin: 10px;
+    width: 60px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.product {
+    margin: 10px 0 10px 0;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid black;
 }

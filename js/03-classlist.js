@@ -10,20 +10,20 @@ const btnRef = document.querySelector('.magic-btn');
  */
 
 
-// const linkRef = document.querySelector('.site-nav');
-// linkRef.classList.add('update-color', '4');
-// linkRef.classList.remove('4');
-
-// btnRef.addEventListener('click', () => {
-//     linkRef.classList.toggle('update-color');
-// });
-// // linkRef.classList.replace('site-nav', 'item-nav');
-// console.log(linkRef.classList.contains('zhopa'));
-
-const currentLink = '/contact';
+const linkRef = document.querySelector('.site-nav');
+linkRef.classList.add('update-color', '4');
+linkRef.classList.remove('4');
 
 btnRef.addEventListener('click', () => {
-    const linkRef = document.querySelector(`.site-nav__link[href="${currentLink}"]`);
-    linkRef.classList.toggle('orange-link');
+    linkRef.classList.toggle('update-color');
 });
+// linkRef.classList.replace('site-nav', 'item-nav');
+console.log(linkRef.classList.contains('zhopa'));
+
+// const currentLink = '/contact';
+
+// btnRef.addEventListener('click', () => {
+//     const linkRef = document.querySelector(`.site-nav__link[href="${currentLink}"]`);
+//     linkRef.classList.toggle('orange-link');
+// });
 
