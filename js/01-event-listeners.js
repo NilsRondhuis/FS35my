@@ -18,7 +18,8 @@ const removeLisBtnRef = document.querySelector('.js-remove-listener');
 //     console.log('Click');
 // })
 
-addLisBtnRef.addEventListener('click', () => {
+addLisBtnRef.addEventListener('click', (event) => {
+    console.log(event);
     console.log('Повесил слушателя');
 
     targetBtnRef.addEventListener('click', onTargetBtnClick);

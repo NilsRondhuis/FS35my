@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Мастерская: модальное окно</title>
+    <link rel="stylesheet" href="./css/modal.css">
+  </head>
+  <body>
+    <p><a href="/">На главную</a></p>
+
+    <button class="button" data-action="open-modal">Открыть модалку</button>
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <h2>Модальное окно</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui repellendus non doloremque quibusdam delectus recusandae minima voluptatibus ab cumque obcaecati quam fugit nobis inventore quas cupiditate laboriosam culpa, ducimus eligendi.</p>
+            <button class="close-btn">Закрыть модалку</button>
+        </div>
+    </div>
+
+    <script src="./js/06-modal.js" type="module"></script>
+  </body>
+</html>
