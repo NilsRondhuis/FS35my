@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "script-1": "echo \"SCRIPT-1\"",
-    "script-2": "echo \"SCRIPT-2\"",
-    "all": "npm run script-1 && npm run script-2",
-    "build": "babel src -d dist"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -28,8 +24,6 @@
     "shortid": "^2.2.16"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0"
+    "parcel-bundler": "^1.12.5"
   }
 }
