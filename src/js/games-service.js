@@ -5,3 +5,5 @@ const formsAllPlayers = () => {
 const teamAllLeague = () => {
     console.log('All team');
 };
+
+export { formsAllPlayers, teamAllLeague };
