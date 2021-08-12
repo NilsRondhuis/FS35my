@@ -1,0 +1,24 @@
+{
+  "name": "35my",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsRondhuis/FS35my.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NilsRondhuis/FS35my/issues"
+  },
+  "homepage": "https://github.com/NilsRondhuis/FS35my#readme",
+  "dependencies": {
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
