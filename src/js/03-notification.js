@@ -20,7 +20,6 @@ showNotification();
 /*
  * Функции
  */
-
 function onNotificationClick() {
   hideNotification();
   clearTimeout(timeoutId);
