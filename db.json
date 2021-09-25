@@ -1,54 +1,149 @@
 {
-  "tasks": [
+  "books": [
     {
-      "learn": "Next js",
-      "description": "Video",
-      "id": 1
+      "id": 1,
+      "title": "Последнее королевство",
+      "author": "Бернард Корнуэлл",
+      "genres": [
+        "приключения"
+      ],
+      "rating": 8.38
     },
     {
-      "learn": "Vue js",
-      "description": "course",
-      "id": 2
+      "id": 2,
+      "title": "На берегу спокойных вод",
+      "author": "Роберт Шекли",
+      "genres": [
+        "фантастика"
+      ],
+      "rating": 8.51
     },
     {
-      "learn": "GraphQL",
-      "description": "Books",
-      "id": 3
+      "id": 3,
+      "title": "Пожиратель призраков",
+      "author": "Говард Лавкрафт",
+      "genres": [
+        "ужасы",
+        "мистика"
+      ],
+      "rating": 7.94
     },
     {
-      "learn": "Typescript",
-      "description": "books",
-      "id": 4
-    }
-  ],
-  "items": [
-    {
-      "text": "На разметке не появляются 2 ли сразу",
-      "id": 1
+      "id": 4,
+      "title": "Разоблаченный проходимец",
+      "author": "Франц Кафка",
+      "genres": [
+        "классика"
+      ],
+      "rating": 6.62
     },
     {
-      "text": "Нормально работает",
-      "id": 2
+      "id": 5,
+      "title": "Два солнца",
+      "author": "Леонид Кудрявцев",
+      "genres": [
+        "фантастика"
+      ],
+      "rating": 6.36
     },
     {
-      "text": "Дата бейс топ",
-      "id": 3
+      "id": 6,
+      "title": "Сон смешного человека",
+      "author": "Федор Достоевский",
+      "genres": [
+        "классика"
+      ],
+      "rating": 7.75
     },
     {
-      "text": "Будет классная приложуха по таскам",
-      "id": 4
-    },
-    {
-      "text": "Осталось только придумать дизайн",
-      "id": 5
-    },
-    {
-      "text": "Что то не так с хбс",
-      "id": 6
-    },
-    {
-      "text": "Шаблонные строки он фая",
+      "title": "Тестовая книга",
+      "author": "Я",
+      "genres": [
+        "JS"
+      ],
+      "rating": 10,
       "id": 7
+    },
+    {
+      "title": "Тестовая книга",
+      "author": "Я",
+      "genres": [
+        "JS"
+      ],
+      "rating": 10,
+      "id": 8
+    },
+    {
+      "title": "Большая тестовая книга по CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 9,
+      "id": 11
+    },
+    {
+      "title": "Тестовая книга по CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 9,
+      "id": 12
+    },
+    {
+      "title": "Большая новая тестовая книга по HTML",
+      "author": "Я",
+      "genres": [
+        "HTML"
+      ],
+      "rating": 7,
+      "id": 13
+    },
+    {
+      "title": "Тестовая книга по HTML",
+      "author": "Манго",
+      "genres": [
+        "HTML"
+      ],
+      "rating": 4,
+      "id": 17
+    },
+    {
+      "title": "Тестовая книга по CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 1,
+      "id": 18
+    },
+    {
+      "title": "Большая новая книга по NODEJS",
+      "author": "Я",
+      "genres": [
+        "HTML"
+      ],
+      "rating": 7,
+      "id": 19
+    },
+    {
+      "title": "Тестовая книга по CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 9,
+      "id": 20
+    },
+    {
+      "title": "Тестовая книга по CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 9,
+      "id": 21
     }
   ]
 }
