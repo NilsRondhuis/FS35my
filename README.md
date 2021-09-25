@@ -1,1 +1,1 @@
-# FS35
+# Chatty events и image lazy-loading
