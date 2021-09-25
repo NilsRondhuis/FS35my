@@ -1,4 +1,4 @@
-# FS35
+# Node.js и npm
 
 - Терминал
   - [Шпаргалка 1](https://tproger.ru/translations/bash-cheatsheet/)
