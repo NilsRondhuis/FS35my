@@ -66,7 +66,7 @@ asyncMakeSmoothie()
 
 
 // const fn = async function () {};  expression
-// const fn = async () => {};  declaration
+// const fn = async () => {};  arrow
 // const x = {                  method obj
 //   async getName() {  
 
